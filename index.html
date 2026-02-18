@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Md Abdullah Ali — Full Stack Web Developer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Md Abdullah Ali — Full Stack Web Developer with 4+ years of experience in Data Science, Analytics, SQL, Python, Power BI & Machine Learning. Based in New Delhi, India.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, Data Analyst, Portfolio, Md Abdullah Ali">
+    <meta name="author" content="Md Abdullah Ali">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/premium-portfolio.css">
+</head>
+<body>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Md. Abdullah Ali</span>
+                </h1>
+                <div class="hero-role-wrapper">
+                    <span class="hero-role-prefix">I'm a</span>
+                    <span class="hero-role" id="heroRole"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <h2 class="hero-subtitle">Full Stack Web Developer</h2>
+                <p class="hero-description">Crafting digital experiences with code & creativity. Transforming ideas into powerful, scalable web solutions.</p>
+                <div class="hero-cta">
+                    <a href="https://www.youtube.com/@RhraOfficial" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <a href="https://github.com/md-abdullahali" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-github"></i> My Works
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="1000">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <img src="images/bg_1.png" alt="Md Abdullah Ali" loading="eager">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-ring hero-image-ring-2"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fab fa-react"></i>
+                    <span>React.js</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-col" data-animate="fade-right">
+                    <div class="about-image-card">
+                        <img src="images/about-me.png" alt="Md Abdullah Ali" class="about-photo">
+                        <div class="about-image-overlay"></div>
+                        <div class="about-info-badge">
+                            <div class="info-item">
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Md Abdullah Ali</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Role</span>
+                                <span class="info-value">Full Stack Web Developer</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Experience</span>
+                                <span class="info-value highlight">4 Years</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">New Delhi, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col" data-animate="fade-left">
+                    <div class="about-text">
+                        <p class="about-description">With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+                            Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+                            Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+                        
+                        <div class="about-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Profile</span>
+                                <span class="detail-value">Data Science &amp; Analytics</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Domain</span>
+                                <span class="detail-value">Retail, Ecommerce, BFSI &amp; Digital Marketing</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Education</span>
+                                <span class="detail-value">Bachelor of Engineering</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Language</span>
+                                <span class="detail-value">English, Hindi</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">BI Tools</span>
+                                <span class="detail-value">Microsoft Power BI, Looker &amp; Tableau</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Other Skills</span>
+                                <span class="detail-value">Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Interest</span>
+                                <span class="detail-value">Traveling, Travel Photography, Teaching</span>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <div class="projects-count">
+                                <span class="count-number" data-target="30">0</span><span class="count-plus">+</span>
+                                <span class="count-label">Projects completed</span>
+                            </div>
+                            <a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="skills-container">
+                        <h3 class="skills-title">Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">30%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="30"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Data Visualization</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Statistical Analysis</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-percent">20%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESUME SECTION ==================== -->
+    <section id="resume" class="resume-section section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;resume&gt;</span>
+                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <p class="section-subtitle">Seasoned Senior Data Analyst with 4+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+            </div>
+
+            <!-- Experience -->
+            <div class="resume-block" data-animate="fade-up">
+                <div class="resume-block-header">
+                    <div class="resume-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Experience</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 - Present</span>
+                            <h4 class="timeline-title">Senior Data Analyst</h4>
+                            <span class="timeline-company"><i class="fas fa-building"></i> Merkle</span>
+                            <p class="timeline-desc">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.</p>
+                            <ul class="timeline-list">
+                                <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+                                <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+                                <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2018 - 2021</span>
+                            <h4 class="timeline-title">Senior Data Analyst</h4>
+                            <span class="timeline-company"><i class="fas fa-building"></i> iQuanti</span>
+                            <p class="timeline-desc">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.</p>
+                            <ul class="timeline-list">
+                                <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+                                <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+                                <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-block" data-animate="fade-up">
+                <div class="resume-block-header">
+                    <div class="resume-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2018 - 2022</span>
+                            <h4 class="timeline-title">Bachelor of Technology & Engineering</h4>
+                            <span class="timeline-company"><i class="fas fa-university"></i> Sandip University Nashik (Maharashtra)</span>
+                            <p class="timeline-desc">Grade: First class distinction.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2015 - 2017</span>
+                            <h4 class="timeline-title">Higher Secondary School</h4>
+                            <span class="timeline-company"><i class="fas fa-school"></i> V.M Inter Collage School</span>
+                            <p class="timeline-desc">Grade: First class.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-download" data-animate="fade-up">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-image">
+                        <img src="images/proj_1.jpg" alt="Digital Music Store Data Analysis" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-badge">SQL</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" target="_blank">Digital Music Store Data Analysis using SQL</a></h3>
+                        <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-image">
+                        <img src="images/proj_2.jpg" alt="Data Analysis using Python" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-badge">Python</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank">Data Analysis using Python Project for Beginners</a></h3>
+                        <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-image">
+                        <img src="images/proj_3.jpg" alt="Power BI Sales dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-badge">Power BI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" target="_blank">Power BI Sales dashboard Project for Beginners</a></h3>
+                        <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-image">
+                        <img src="images/proj_4.jpg" alt="Sales Forecast" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-badge">ML</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" target="_blank">Sales Forecast- Time Series Forecasting</a></h3>
+                        <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-image">
+                        <img src="images/proj_5.jpg" alt="Customer Segmentation" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech-badge">ML</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" target="_blank">Customer Segmentation using clustering model</a></h3>
+                        <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub CTA -->
+            <div class="github-cta" data-animate="fade-up">
+                <div class="github-cta-content glass-card">
+                    <div class="github-cta-text">
+                        <h3>More projects on <span class="gradient-text">GitHub</span></h3>
+                        <p>I love to solve business problems &amp; uncover hidden data stories</p>
+                    </div>
+                    <a href="https://github.com/rishabhnmishra" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> View GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COUNTER SECTION ==================== -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item" data-animate="fade-up">
+                    <div class="counter-icon"><i class="fas fa-trophy"></i></div>
+                    <span class="counter-number" data-target="20">0</span>
+                    <span class="counter-label">Achievements</span>
+                </div>
+                <div class="counter-item" data-animate="fade-up">
+                    <div class="counter-icon"><i class="fas fa-project-diagram"></i></div>
+                    <span class="counter-number" data-target="30">0</span>
+                    <span class="counter-label">Projects</span>
+                </div>
+                <div class="counter-item" data-animate="fade-up">
+                    <div class="counter-icon"><i class="fas fa-user-graduate"></i></div>
+                    <span class="counter-number" data-target="1000">0</span>
+                    <span class="counter-label">Mentored Students</span>
+                </div>
+                <div class="counter-item" data-animate="fade-up">
+                    <div class="counter-icon"><i class="fas fa-mug-hot"></i></div>
+                    <span class="counter-number" data-target="500">0</span>
+                    <span class="counter-label">Cups of coffee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Below are the details to reach out to me!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card glass-card" data-animate="fade-up">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <p>New Delhi, India</p>
+                </div>
+
+                <div class="contact-card glass-card" data-animate="fade-up">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Contact Number</h3>
+                    <p><a href="tel:+918873351807">+ 91 8873351807</a></p>
+                </div>
+
+                <div class="contact-card glass-card" data-animate="fade-up">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p><a href="mailto:mdabdullah031999@gmail.com">mdabdullah031999@gmail.com</a></p>
+                </div>
+
+                <div class="contact-card glass-card" data-animate="fade-up">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <h3>Download Resume</h3>
+                    <p><a href="#">resumelink</a></p>
+                </div>
+            </div>
+
+            <div class="contact-question" data-animate="fade-up">
+                <div class="glass-card question-card">
+                    <h3>Have a <span class="gradient-text">Question?</span></h3>
+                    <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-paper-plane"></i> Click Here
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-links" data-animate="fade-up">
+                <span class="social-label">Find me on</span>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@RishahraOfficial" class="social-icon" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mdabdullahali/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/risnmishra" class="social-icon" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://twitter.com/rihnmishra" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rajgamer_/" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/premium-portfolio.js"></script>
+</body>
+</html>
